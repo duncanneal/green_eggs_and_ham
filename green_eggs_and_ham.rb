@@ -18,10 +18,13 @@ class GreenEggsAndHam
      words.uniq.sort
   end   
 
-  def words_less_than(i)
-      
+  def number_of_words_shorter_than(len)
+    words.reject { |i| i.length >= len }.count
+  end
 
+  def longest_word
 
+  end
   
  
 end
