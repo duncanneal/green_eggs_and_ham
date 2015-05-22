@@ -23,7 +23,7 @@ class GreenEggsAndHamTest < MiniTest::Test
   def test_03_count_of_words_less_than_four_letters
     assert_equal 59, @book.number_of_words_shorter_than(4)
   end
-
+  
   def test_04_longest_word
     skip
     assert_match /Sam-I-am/i, @book.longest_word
