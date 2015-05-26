@@ -34,8 +34,12 @@ def frequency_of_unique_words
   end
 end
 
-def stanza
-  
+def stanzas
+  @text.split("\n\n") #we are looking for 2 newlines
+end
+
+def lines
+  @text.split("\n").reject { |line| line == ""}  #no space between "", as we are not looking for \n and a space
 end
 
 end
