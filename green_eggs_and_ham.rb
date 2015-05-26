@@ -15,24 +15,27 @@ class GreenEggsAndHam
   end 
 
   def sorted_unique_words
-     words.uniq.sort
-  end   
+   words.uniq.sort
+ end   
 
-  def number_of_words_shorter_than(len)
-    words.reject { |i| i.length >= len }.count
-  end
+ def number_of_words_shorter_than(len)
+  words.reject { |i| i.length >= len }.count
+end
 
-  def longest_word
-    words.max_by { |x| x.length} 
-  end
+def longest_word
+  words.max_by { |x| x.length} 
+end
 
-  def frequency_of_unique_words
-    Hash.new(0).tap do |counts|
-      words.each do |word|
-        counts[word] += 1
-      end
+def frequency_of_unique_words
+  Hash.new(0).tap do |counts|
+    words.each do |word|
+      counts[word] += 1
     end
   end
+end
 
- 
+def stanza
+  
+end
+
 end
