@@ -26,7 +26,7 @@ def longest_word
   words.max_by { |x| x.length} 
 end
 
-def frequency_of_unique_words
+def frequency_of_unique_words  #hash is one thing with many key values in it
   Hash.new(0).tap do |counts|
     words.each do |word|
       counts[word] += 1
